@@ -90,7 +90,7 @@ double calcrate( TreeNode<ParserToken> operator_) {
 
 
 int main() {
-    string target = "6+5*23";
+    string target = "6+5*23-21";
     std::cout << "target : " << target << std::endl;
     MyLexer l = MyLexer(target);
     queue<ParserToken> res1 = l.getTokens();
